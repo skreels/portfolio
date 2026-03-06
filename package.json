@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-samuel",
+  "version": "1.0.0",
+  "description": "Portfolio de Samuel Lefevre",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server public",
+    "deploy": "gh-pages -d public"
+  },
+  "author": "Samuel Lefevre",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "live-server": "^1.2.1"
+  }
+}

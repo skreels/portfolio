@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samuel Lefevre — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header id="main-header">
+    <nav>
+      <div class="nav-logo">SL</div>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects-section">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-layer"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up" style="animation-delay: 0.2s;">Bonjour, je suis</p>
+        <h1 class="reveal-up" style="animation-delay: 0.4s;">Samuel <span class="accent">LEFEVRE</span></h1>
+        <p class="hero-subtitle reveal-up" style="animation-delay: 0.6s;">Étudiant développeur full-stack en troisième année de BUT Informatique</p>
+        <div class="hero-cta reveal-up" style="animation-delay: 0.8s;">
+          <a href="#projects-section" class="btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn-outline">Me contacter</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator reveal-up" style="animation-delay: 1.2s;">
+      <span></span>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- Section À propos -->
+    <section id="about">
+      <div class="section-inner">
+        <h2 class="section-title fade-in">À propos</h2>
+        <div class="about-layout fade-in">
+          <div class="about-photo-wrapper">
+            <div class="about-photo">
+              <img src="sam.jpg" alt="Photo de Samuel">
+            </div>
+          </div>
+          <div class="about-text">
+            <p>Bienvenue sur mon portfolio.<br>
+              Je m'appelle Samuel Lefevre, j'ai 21 ans et je suis originaire de Montpellier.</p>
+            <p>Après avoir obtenu un bac général mention assez bien, avec les spécialités Mathématiques et Physique-Chimie en 2022, j'ai
+              d'abord fait une année de Licence en mathématiques à la faculté des sciences de Montpellier, avec une option en Informatique.
+              Je me suis rapidement intéressé à la programmation, et l'année suivante, je me suis réorienté. J'ai donc intégré l'IUT d'Arles
+              en septembre 2023 pour préparer un BUT Informatique, où j'ai pu approfondir mes connaissances en développement et découvrir de nouveaux langages.</p>
+            <p>Dans le cadre du BUT, j'ai participé à plusieurs projets seul et en équipe, ce qui m'a permis de mettre en pratique mes compétences.
+              Après l'obtention de mon BUT, j'envisage de préparer un diplôme d'ingénieur informatique en poursuivant mes études.</p>
+            <p>Vous pouvez consulter mon CV en <a href="CV_Samuel_Lefevre.pdf" target="_blank" class="inline-link">cliquant ici</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills">
+      <div class="section-inner">
+        <h2 class="section-title fade-in">Compétences</h2>
+        <div class="skills-container fade-in">
+          <div class="skills-category">
+            <h3>Front-end</h3>
+            <div class="skills-list">
+              <div class="skill-item slide-up"><img src="html.png" alt="HTML"><p>HTML</p></div>
+              <div class="skill-item slide-up"><img src="css.png" alt="CSS"><p>CSS</p></div>
+              <div class="skill-item slide-up"><img src="javascript.png" alt="JavaScript"><p>JavaScript</p></div>
+              <div class="skill-item slide-up"><img src="angular.png" alt="Angular"><p>Angular</p></div>
+              <div class="skill-item slide-up"><img src="react.png" alt="React.js"><p>React.js</p></div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Back-end</h3>
+            <div class="skills-list">
+              <div class="skill-item slide-up"><img src="c++.png" alt="C++"><p>C++</p></div>
+              <div class="skill-item slide-up"><img src="java.png" alt="Java"><p>Java</p></div>
+              <div class="skill-item slide-up"><img src="nodejs.png" alt="Node.js"><p>Node.js</p></div>
+              <div class="skill-item slide-up"><img src="sql.png" alt="SQL"><p>SQL</p></div>
+              <div class="skill-item slide-up"><img src="php.png" alt="PHP"><p>PHP</p></div>
+              <div class="skill-item slide-up"><img src="python.png" alt="Python"><p>Python</p></div>
+              <div class="skill-item slide-up"><img src="c%23.png" alt="C#"><p>C#</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projets & Démos (alignés) -->
+    <section id="projects-section">
+      <div class="section-inner-wide">
+        <h2 class="section-title fade-in">Projets & Démos</h2>
+        <div class="projects-list">
+
+          <div class="project-row fade-in">
+            <article class="project-card">
+              <div class="card-accent"></div>
+              <div class="card-content">
+                <h3>GPS Crous <span class="card-year">2024</span></h3>
+                <p>J'ai développé une application web qui permet de trouver le restaurant Crous le plus proche d'une adresse donnée.
+                  L'objectif est de permettre aux étudiants de trouver sans difficulté leur restaurant Crous et de connaître leur adresse, leurs horaires d'ouverture,
+                  et bien plus d'informations. Ce projet m'a permis d'apprendre la gestion des API ainsi que l'affichage d'une carte.</p>
+                <div class="card-tags"><span>HTML</span><span>SCSS</span><span>JavaScript</span></div>
+              </div>
+            </article>
+            <div class="video-card"><video controls><source src="crous.mp4" type="video/mp4"></video></div>
+          </div>
+
+          <div class="project-row fade-in">
+            <article class="project-card">
+              <div class="card-accent"></div>
+              <div class="card-content">
+                <h3>Gestionnaire de recettes <span class="card-year">2024</span></h3>
+                <p>J'ai réalisé une application permettant d'enregistrer, de consulter et de modifier des recettes de cuisine.
+                  Ce projet m'a permis de renforcer mon niveau en java, d'apprendre à créer des interfaces utilisateurs et de stocker des données en temps réel.</p>
+                <div class="card-tags"><span>Java</span><span>CSS</span><span>SQL</span></div>
+              </div>
+            </article>
+            <div class="video-card"><video controls><source src="recette.mp4" type="video/mp4"></video></div>
+          </div>
+
+          <div class="project-row fade-in">
+            <article class="project-card">
+              <div class="card-accent"></div>
+              <div class="card-content">
+                <h3>Jeu de Logique <span class="card-year">2024-2025</span></h3>
+                <p>Ce jeu, développé de manière collaborative avec trois autres développeurs, met en avant la rapidité de réflexion et l'optimisation des chemins.
+                  Les joueurs doivent déplacer des routes afin de reconstituer le schéma final avec un minimum de déplacements.
+                  Ce projet m'a permis d'acquérir des compétences telles que le design, l'utilisation de librairie externe, et le travail collaboratif.</p>
+                <div class="card-tags"><span>GitLab</span><span>C++</span><span>Raylib</span><span>SQL</span></div>
+              </div>
+            </article>
+            <div class="video-card"><video controls><source src="rerail.mp4" type="video/mp4"></video></div>
+          </div>
+
+          <div class="project-row fade-in">
+            <article class="project-card">
+              <div class="card-accent"></div>
+              <div class="card-content">
+                <h3>Memory Matching <span class="card-year">2025</span></h3>
+                <p>J'ai développé un jeu de memory matching sur le thème des voitures, où l'objectif est de retrouver toutes les paires de cartes
+                  en les retournant deux par deux avant la fin du compte à rebours. Ce projet m'a permis d'apprendre à manipuler des objets en temps réel.</p>
+                <div class="card-tags"><span>JavaScript</span><span>React</span><span>CSS</span></div>
+              </div>
+            </article>
+            <div class="video-card"><video controls><source src="memory.mp4" type="video/mp4"></video></div>
+          </div>
+
+          <div class="project-row fade-in">
+            <article class="project-card">
+              <div class="card-accent"></div>
+              <div class="card-content">
+                <h3>Jumelles Numériques <span class="card-year">2025-2026</span></h3>
+                <p>Ce projet, développé en collaboration avec trois autres développeurs, consiste en une application de visite virtuelle
+                  immersive de la ville d'Arles en réalité virtuelle. À l'aide d'un casque VR, l'utilisateur est plongé dans des scènes
+                  à 360°. En orientant son regard vers un monument historique, des informations détaillées s'affichent automatiquement.</p>
+                <div class="card-tags"><span>Unity</span><span>C#</span><span>JavaScript</span><span>SQLite</span></div>
+              </div>
+            </article>
+            <div class="video-card"><video controls><source src="projet5.mp4" type="video/mp4"></video></div>
+          </div>
+
+          <div class="project-row fade-in">
+            <article class="project-card">
+              <div class="card-accent"></div>
+              <div class="card-content">
+                <h3>EloaneConnected <span class="card-year">Depuis 2025</span></h3>
+                <p>Dans le cadre de mon alternance chez Contac Solutions, je développe EloaneConnected, une application Android permettant
+                  de piloter un automate de désinfection des surfaces par lumière pulsée intense.
+                  L'application permet à l'utilisateur de configurer, lancer et suivre les cycles de désinfection depuis une tablette.</p>
+                <div class="card-tags"><span>Qt Creator</span><span>Qt Design Studio</span><span>Figma</span><span>PhpMyAdmin</span><span>GitHub</span><span>Odoo</span></div>
+              </div>
+            </article>
+            <div class="video-card"><video controls><source src="projet6.mp4" type="video/mp4"></video></div>
+          </div>
+
+          <div class="project-row fade-in">
+            <article class="project-card">
+              <div class="card-accent"></div>
+              <div class="card-content">
+                <h3>DevArt — Prix du Public <span class="card-year">2026</span></h3>
+                <p>Lors du DevArt, un hackathon intensif de 32 heures en équipe, nous avons conçu et développé un jeu en réalité
+                  augmentée autour du thème de l'écho. Équipé d'un casque VR, le joueur doit se cloner afin d'effectuer plusieurs
+                  actions simultanément et résoudre les énigmes de chaque salle pour s'échapper d'un hôpital abandonné.
+                  Le jeu se compose de plusieurs niveaux de difficulté croissante, où la coordination entre les clones est
+                  essentielle pour progresser vers la sortie. Notre projet a remporté le prix du public.</p>
+                <div class="card-tags"><span>Unity</span><span>C#</span><span>Blender</span><span>GitHub</span></div>
+              </div>
+            </article>
+            <div class="video-card"><video controls><source src="devart.mp4" type="video/mp4"></video></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+      <div class="section-inner">
+        <h2 class="section-title fade-in">Contact</h2>
+        <div class="contact-content fade-in">
+          <p class="contact-heading">Envie de collaborer ?</p>
+          <p class="contact-sub">N'hésitez pas à me contacter, je suis toujours ouvert à de nouvelles opportunités.</p>
+          <a href="mailto:samuellefevre34@gmail.com" class="btn-primary btn-contact">samuellefevre34@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Conçu & développé par Samuel Lefevre</p>
+      <p class="footer-tech">HTML · CSS · JavaScript · Node.js</p>
+      <p class="footer-copy">&copy; 2025</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
