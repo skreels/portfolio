@@ -252,6 +252,19 @@ nav a:hover::after { width: 100%; }
   color: var(--accent);
 }
 
+.btn-cv {
+  background: linear-gradient(135deg, #6c63ff, #a855f7);
+  border-color: transparent;
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.4);
+  letter-spacing: 0.03em;
+}
+.btn-cv:hover {
+  background: linear-gradient(135deg, #a855f7, #6c63ff);
+  color: #fff;
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}
+
 /* Scroll indicator */
 .scroll-indicator {
   position: absolute;
