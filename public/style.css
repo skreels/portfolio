@@ -494,6 +494,33 @@ section {
   max-width: 300px;
 }
 
+/* Shine effect on section titles */
+.section-title {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.15), transparent);
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+
+.section-title.visible::before {
+  animation: title-shine 1s ease 0.3s forwards;
+}
+
+@keyframes title-shine {
+  0% { left: -100%; }
+  100% { left: 150%; }
+}
+
 /* ============================================
    SCROLL ANIMATIONS
    ============================================ */
@@ -507,6 +534,21 @@ section {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Stagger reveal: project rows slide from left/right alternately */
+.project-row.fade-in {
+  transform: translateX(-80px);
+  opacity: 0;
+}
+
+.project-row.fade-in:nth-child(even) {
+  transform: translateX(80px);
+}
+
+.project-row.fade-in.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .slide-up {

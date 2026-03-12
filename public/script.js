@@ -354,3 +354,31 @@ navUl.querySelectorAll('a').forEach(link => {
   init();
   draw();
 })();
+
+// ============================================
+// Magnetic buttons (hero CTA)
+// ============================================
+(function () {
+  if (!window.matchMedia('(hover: hover)').matches) return;
+
+  const buttons = document.querySelectorAll('.hero-cta a');
+  const strength = 0.3;
+
+  buttons.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      requestAnimationFrame(() => {
+        btn.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+      });
+    });
+
+    btn.addEventListener('mouseleave', () => {
+      requestAnimationFrame(() => {
+        btn.style.transform = '';
+      });
+    });
+  });
+})();
