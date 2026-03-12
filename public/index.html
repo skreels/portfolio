@@ -11,8 +11,8 @@
 </head>
 <body>
 
+  <div class="cursor-glow" id="cursor-glow"></div>
 
-  
   <!-- Navigation -->
   <header id="main-header">
     <nav>
@@ -23,6 +23,11 @@
         <li><a href="#projects-section">Projets</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   </header>
 
@@ -33,7 +38,7 @@
     <div class="hero-content">
       <div class="hero-text">
         <p class="hero-greeting reveal-up" style="animation-delay: 0.2s;">Bonjour, je suis</p>
-        <h1 class="reveal-up" style="animation-delay: 0.4s;">Samuel <span class="accent">LEFEVRE</span></h1>
+        <h1 class="reveal-up" style="animation-delay: 0.4s;"><span class="glitch-name" id="glitch-name">Samuel <span class="accent">LEFEVRE</span></span></h1>
         <p class="hero-subtitle reveal-up" style="animation-delay: 0.6s;">Étudiant développeur full-stack en troisième année de BUT Informatique</p>
         <div class="hero-cta reveal-up" style="animation-delay: 0.8s;">
           <a href="#projects-section" class="btn-primary">Voir mes projets</a>
