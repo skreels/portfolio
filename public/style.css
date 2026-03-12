@@ -614,6 +614,11 @@ section {
   align-self: center;
 }
 
+.project-row .video-card.portrait video {
+  object-fit: contain;
+  background: #000;
+}
+
 /* ============================================
    CONTACT
    ============================================ */
