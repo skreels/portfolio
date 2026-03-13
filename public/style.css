@@ -734,6 +734,7 @@ section {
 .card-content h3 {
   font-size: 1.4rem;
   font-weight: 600;
+  color: #f0f0f0;
   margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
@@ -752,7 +753,7 @@ section {
 }
 
 .card-content p {
-  color: var(--text-secondary);
+  color: #c8c6c2;
   font-size: 1.2rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;
@@ -760,7 +761,7 @@ section {
 
 .card-skill-gain {
   font-size: 1rem;
-  color: var(--accent);
+  color: #a99eff;
   font-style: italic;
   margin-top: 0.5rem;
   padding: 0.4rem 0.75rem;
@@ -778,7 +779,7 @@ section {
 .card-tags span {
   font-family: var(--font-mono);
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: #b8b6c2;
   background: rgba(108, 99, 255, 0.06);
   border: 1px solid rgba(108, 99, 255, 0.2);
   padding: 6px 16px;
