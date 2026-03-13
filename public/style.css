@@ -772,23 +772,24 @@ section {
 .card-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 .card-tags span {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border);
-  padding: 4px 12px;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  background: rgba(108, 99, 255, 0.06);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  padding: 6px 16px;
   border-radius: 20px;
   transition: all var(--transition-fast);
 }
 
 .project-card:hover .card-tags span {
-  border-color: rgba(108, 99, 255, 0.15);
-  color: var(--text-secondary);
+  border-color: rgba(108, 99, 255, 0.4);
+  color: var(--text-primary);
+  background: rgba(108, 99, 255, 0.1);
 }
 
 /* Video in row */
