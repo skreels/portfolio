@@ -290,7 +290,7 @@ navUl.querySelectorAll('a').forEach(link => {
   let w, h, particles;
   const count = 60;
   const maxDist = 150;
-  const accentR = 108, accentG = 99, accentB = 255;
+  const accentR = 0, accentG = 212, accentB = 255;
 
   function resize() {
     w = canvas.width = window.innerWidth;
