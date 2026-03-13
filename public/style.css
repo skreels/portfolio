@@ -328,7 +328,7 @@ nav a:hover::after { width: 100%; }
 .hero-greeting {
   font-family: var(--font-mono);
   color: var(--accent);
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -351,9 +351,9 @@ nav a:hover::after { width: 100%; }
 
 .hero-subtitle {
   color: var(--text-secondary);
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
   font-weight: 300;
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto 2.5rem;
 }
 
@@ -373,12 +373,12 @@ nav a:hover::after { width: 100%; }
 /* Buttons */
 .btn-primary {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 18px 42px;
   background: var(--accent);
   color: #fff;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
   transition: all var(--transition);
   border: 2px solid var(--accent);
 }
