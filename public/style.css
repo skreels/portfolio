@@ -743,10 +743,10 @@ section {
 
 .card-year {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   color: var(--accent);
   background: var(--accent-soft);
-  padding: 3px 10px;
+  padding: 5px 14px;
   border-radius: 20px;
   font-weight: 400;
 }
