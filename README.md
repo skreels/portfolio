@@ -1,6 +1,5 @@
-mettre en gras info importantes
-augmenter tailles polices et a propos sur la page entière
-augmenter lisibilités compétences
+Développer plus les projets avec les fonctionnalités réalisés
 Mettre en avant ce que j'ai appris avec chaque projet
 Liens linkedin et github
-inverser l'ordre des projets (plus récent en premier)
+photo plus sérieuse
+Diminuer l'animation des cartes 3D des projets
