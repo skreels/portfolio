@@ -472,7 +472,7 @@ section {
 }
 
 .section-inner-wide {
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -597,7 +597,7 @@ section {
 .about-text p {
   color: var(--text-primary);
   margin-bottom: 1.2rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .inline-link {
@@ -634,7 +634,7 @@ section {
 
 .skills-category h3 {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -657,8 +657,8 @@ section {
 }
 
 .skill-item img {
-  width: 52px;
-  height: 52px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   filter: brightness(0.85);
   transition: filter var(--transition-fast);
@@ -669,7 +669,7 @@ section {
 
 .skill-item p {
   margin-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #ffffff;
   transition: color var(--transition-fast);
 }
@@ -732,7 +732,7 @@ section {
 }
 
 .card-content h3 {
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0.8rem;
   display: flex;
@@ -753,9 +753,20 @@ section {
 
 .card-content p {
   color: var(--text-secondary);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;
+}
+
+.card-skill-gain {
+  font-size: 1rem;
+  color: var(--accent);
+  font-style: italic;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  background: var(--accent-soft);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 .card-tags {
